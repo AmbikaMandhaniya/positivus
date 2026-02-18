@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Positivus — Frontend Intern Assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A pixel-perfect React implementation of the Positivus digital marketing agency website, built as part of the Bits and Volts Pvt. Ltd. frontend intern assessment.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## What This Is
 
-### `npm start`
+This is a responsive, component-based website built in React.js that replicates a Figma design. It covers everything from the navbar down to the footer, with interactive sections like an accordion and a testimonial carousel.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Used
 
-### `npm test`
+- **React.js** (Create React App)
+- **Plain CSS** (scoped per component, no external CSS framework)
+- **Google Fonts** — Space Grotesk
+- **SVG** — all illustrations and icons are hand-coded SVGs, no image files
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+positivus/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Partners.jsx
+│   │   ├── Services.jsx
+│   │   ├── WorkingProcess.jsx
+│   │   ├── Testimonials.jsx
+│   │   └── Footer.jsx
+│   ├── App.jsx
+│   └── index.js
+└── package.json
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How to Run
 
-### `npm run eject`
+Make sure you have **Node.js** installed, then:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/positivus.git
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Move into the project folder
+cd positivus
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Install dependencies
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Start development server
+npm start
+```
 
-## Learn More
+Open **http://localhost:3000** in your browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+# Build for production
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Design Decisions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **No UI library used** — CSS is written manually per component to stay close to the Figma design without any framework overhead.
+- **No image files** — every illustration (megaphone, globe, charts) is a custom inline SVG, keeping the project lightweight.
+- **Scoped styles** — each component manages its own `<style>` tag so there are no global conflicts.
+- **Responsive** — layout adapts cleanly at 1024px (tablet) and 640px (mobile) breakpoints.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
