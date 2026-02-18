@@ -47,7 +47,7 @@ Make sure you have **Node.js** installed, then:
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/positivus.git
+git clone https://github.com/AmbikaMandhaniya/positivus.git
 
 # Move into the project folder
 cd positivus
